@@ -1,0 +1,9 @@
+[Unit]
+Description=Multimonitor detection
+After=graphical.target
+
+[Service]
+ExecStart=/home/thomas/multimon.py
+
+[Install]
+WantedBy=graphical.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=X server resource database
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/xrdb %h/.Xresources
+
+[Install]
+WantedBy=graphical.target

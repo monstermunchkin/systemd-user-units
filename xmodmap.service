@@ -1,0 +1,9 @@
+[Unit]
+Description=Customized keymap
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/xmodmap %h/.Xmodmap
+
+[Install]
+WantedBy=graphical.target

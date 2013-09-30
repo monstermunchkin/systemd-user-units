@@ -1,0 +1,7 @@
+[Unit]
+Description=Multi-User System
+Documentation=man:systemd.special(7)
+AllowIsolate=yes
+
+[Install]
+Alias=default.target
