@@ -5,7 +5,7 @@ Wants=xrdb.service
 After=xrdb.service
 
 [Service]
-Environment=DISPLAY=:0
+#Environment=DISPLAY=:0
 ExecStart=/usr/bin/xautolock
 
 [Install]

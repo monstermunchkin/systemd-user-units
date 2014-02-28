@@ -3,7 +3,9 @@ Description=Compositor for X11
 After=graphical.target
 
 [Service]
-ExecStart=/usr/bin/compton
+ExecStart=/usr/bin/compton -b --write-pid-path=%t/compton.pid
+Type=forking
+PIDFile=%t/compton.pid
 
 [Install]
 WantedBy=graphical.target
