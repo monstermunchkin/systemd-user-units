@@ -1,8 +1,6 @@
 [Unit]
 Description=Multimonitor detection
-Requires=network-online.target
 After=graphical.target
-After=network-online.target
 
 [Service]
 ExecStart=/home/thomas/multimon.py
