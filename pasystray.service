@@ -1,0 +1,9 @@
+[Unit]
+Description=PulseAudio system tray
+
+[Service]
+ExecStart=/usr//bin/pasystray
+Restart=always
+
+[Install]
+WantedBy=graphical.target
